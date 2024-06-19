@@ -342,8 +342,8 @@ dialog .key.active {
   background-color: rgb(177, 36, 36);
 }
 
-#settings {
-  height: auto;
+.gameRunning #settings {
+  height: 90%;
 }
 
 #settings form {

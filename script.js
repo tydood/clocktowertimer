@@ -191,6 +191,8 @@ document.querySelector("#settings").addEventListener("close", (e) => {
   if (document.querySelector("#settings").returnValue === "save") {
     if (!body.classList.contains("gameRunning")) {
       body.classList.add("gameRunning");
+      document.querySelector("#playerCountInput").autofocus = false;
+      document.querySelector("#travellerCountInput").autofocus = true;
     }
     saveSettings();
   }
